@@ -1,0 +1,247 @@
+<!-- Hero Carousel -->
+<section id="home" class="hero-section" style="margin-top: 56px;">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-image" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/1.jpeg'); background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">{{ 'home.title' | translate }}</h1>
+            <p class="lead mb-4">{{ 'home.subtitle' | translate }}</p>
+            <!-- <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">{{ 'home.bookNow' | translate }}</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/2.jpeg'); background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">{{ 'home.exploreEgypt' | translate }}</h1>
+            <p class="lead mb-4">{{ 'home.discoverRedSea' | translate }}</p>
+            <!-- <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">{{ 'home.contactUs' | translate }}</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/3.jpeg'); background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">{{ 'home.adventureAwaits' | translate }}</h1>
+            <p class="lead mb-4">{{ 'home.bestTours' | translate }}</p>
+            <!-- <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">{{ 'home.getStarted' | translate }}</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/4.jpeg'); background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">{{ 'home.adventureAwaits' | translate }}</h1>
+            <p class="lead mb-4">{{ 'home.bestTours' | translate }}</p>
+            <!-- <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">{{ 'home.getStarted' | translate }}</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/5.jpeg'); background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">{{ 'home.adventureAwaits' | translate }}</h1>
+            <p class="lead mb-4">{{ 'home.bestTours' | translate }}</p>
+            <!-- <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">{{ 'home.getStarted' | translate }}</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-image" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/6.jpeg'); background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
+          <div class="text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">{{ 'home.adventureAwaits' | translate }}</h1>
+            <p class="lead mb-4">{{ 'home.bestTours' | translate }}</p>
+            <!-- <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">{{ 'home.getStarted' | translate }}</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="display-4 fw-bold mb-4">{{ 'about.title' | translate }}</h2>
+        <p class="lead mb-4">
+          <strong>{{ 'about.title' | translate }}</strong> {{ 'about.description' | translate }}
+        </p>
+        <p class="mb-4">
+          {{ 'about.description2' | translate }}
+        </p>
+        <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">
+          <i class="bi bi-whatsapp"></i> {{ 'about.bookTransfer' | translate }}
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800" alt="Tour" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Activities Section -->
+<!-- <section id="tours" class="py-5">
+  <div class="container">
+    <h2 class="text-center display-4 fw-bold mb-5">{{ 'tours.activitiesTitle' | translate }}</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" class="card-img-top" alt="Paradise Island" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.paradiseIsland' | translate }}</h5>
+            <p class="card-text">{{ 'tours.paradiseIslandDesc' | translate }}</p>
+            <p class="h4 text-primary">€35</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestParadise')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" class="card-img-top" alt="Marsa Alam" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.aboDabbab' | translate }}</h5>
+            <p class="card-text">{{ 'tours.aboDabbabDesc' | translate }}</p>
+            <p class="h4 text-primary">€90</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestAboDabbab')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?w=600" class="card-img-top" alt="Desert Safari" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.desertSafari' | translate }}</h5>
+            <p class="card-text">{{ 'tours.desertSafariDesc' | translate }}</p>
+            <p class="h4 text-primary">€35</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestSafari')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Popular Tours Section -->
+<!-- <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center display-4 fw-bold mb-5">{{ 'tours.popularTitle' | translate }}</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" class="card-img-top" alt="City Tour" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.cityTour' | translate }}</h5>
+            <p class="card-text">{{ 'tours.cityTourDesc' | translate }}</p>
+            <p class="h4 text-primary">€20</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestCityTour')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a6e?w=600" class="card-img-top" alt="Cairo Trip" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.cairoTrip' | translate }}</h5>
+            <p class="card-text">{{ 'tours.cairoTripDesc' | translate }}</p>
+            <p class="h4 text-primary">€100</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestCairo')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" class="card-img-top" alt="Luxor Trip" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.luxorTrip' | translate }}</h5>
+            <p class="card-text">{{ 'tours.luxorTripDesc' | translate }}</p>
+            <p class="h4 text-primary">€100</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestLuxor')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Full Day Trips Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center display-4 fw-bold mb-5">{{ 'tours.fullDayTitle' | translate }}</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/2.jpeg" class="card-img-top" alt="Cairo" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.cairoTrip' | translate }}</h5>
+            <p class="card-text">{{ 'tours.cairoTripDesc' | translate }}</p>
+            <p class="h4 text-primary">€75</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestCairo')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/22.jpeg" class="card-img-top" alt="Luxor" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.luxorTrip' | translate }}</h5>
+            <p class="card-text">{{ 'tours.luxorTripDesc' | translate }}</p>
+            <p class="h4 text-primary">€80</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestLuxor')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/airport.jpeg" class="card-img-top" alt="Hurghada Airport Transfer" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ 'tours.hurghadaTransfer' | translate }}</h5>
+            <p class="card-text">{{ 'tours.hurghadaTransferDesc' | translate }}</p>
+            <p class="h4 text-primary">{{ 'tours.transferPrice' | translate }}</p>
+            <a [href]="getWhatsAppUrl('whatsapp.interestHurghadaTransfer')" target="_blank" class="btn btn-primary">{{ 'tours.bookNow' | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Adventure CTA Section -->
+<section class="py-5 bg-primary text-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-4">{{ 'adventure.title' | translate }}</h2>
+    <p class="lead mb-4">{{ 'adventure.subtitle' | translate }}</p>
+    <p class="mb-4">{{ 'adventure.description' | translate }}</p>
+    <div class="row g-3 justify-content-center">
+      <div class="col-md-6">
+        <a [href]="getWhatsAppUrl('whatsapp.interestTour')" target="_blank" class="btn btn-light btn-lg w-100">
+          <i class="bi bi-whatsapp"></i> {{ 'adventure.hurghadaActivities' | translate }}
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a [href]="getWhatsAppUrl('whatsapp.interestEgypt')" target="_blank" class="btn btn-light btn-lg w-100">
+          <i class="bi bi-whatsapp"></i> {{ 'adventure.egyptTrips' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

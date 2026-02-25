@@ -1,0 +1,65 @@
+// Global styles for Star Travel
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  
+  &:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+}
+
+.btn-success {
+  background-color: #25d366;
+  border-color: #25d366;
+  
+  &:hover {
+    background-color: #20ba5a;
+    border-color: #1ea952;
+  }
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// RTL Support for Arabic
+[dir="rtl"] {
+  .navbar-nav {
+    .ms-auto {
+      margin-left: 0 !important;
+      margin-right: auto !important;
+    }
+  }
+  
+  .dropdown-menu-end {
+    right: auto !important;
+    left: 0 !important;
+  }
+  
+  .me-1 {
+    margin-left: 0.25rem !important;
+    margin-right: 0 !important;
+  }
+  
+  .me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+  }
+  
+  .ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+  }
+  
+  .text-end {
+    text-align: left !important;
+  }
+  
+  .text-start {
+    text-align: right !important;
+  }
+}
+

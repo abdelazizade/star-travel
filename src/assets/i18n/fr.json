@@ -1,0 +1,85 @@
+{
+  "header": {
+    "home": "Accueil",
+    "about": "À propos",
+    "tours": "Tours",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+  "home": {
+    "title": "Star Travel",
+    "subtitle": "Votre Porte d'Entrée vers des Aventures Extraordinaires",
+    "exploreEgypt": "Explorez l'Égypte",
+    "discoverRedSea": "Découvrez les Merveilles de la Mer Rouge",
+    "adventureAwaits": "L'Aventure Vous Attend",
+    "bestTours": "Vivez les Meilleurs Tours en Égypte",
+    "bookNow": "Réservez Votre Tour Maintenant",
+    "contactUs": "Contactez-Nous",
+    "getStarted": "Commencer"
+  },
+  "about": {
+    "title": "Star Travel",
+    "description": "Star Travel est une entreprise locale offrant des solutions pour un transport terrestre pratique en Égypte. Notre flotte propose des conducteurs professionnels rapides et expéditifs ainsi que des véhicules de haute qualité pour chaque service de transfert.",
+    "description2": "Nous faisons de notre mieux pour vous garantir la meilleure expérience pendant votre voyage. Que vous recherchiez des transferts aéroport, des visites de la ville ou des aventures d'une journée complète, nous avons ce qu'il vous faut.",
+    "bookTransfer": "Réservez Votre Transfert Maintenant"
+  },
+  "tours": {
+    "activitiesTitle": "Activités Autour de Hurghada Mer Rouge",
+    "popularTitle": "Tour Populaire du Mois",
+    "fullDayTitle": "Excursion d'une Journée Complète vers les Lieux Populaires de Hurghada",
+    "paradiseIsland": "Excursion d'une Journée Complète à l'Île du Paradis",
+    "paradiseIslandDesc": "Découvrez la beauté de l'Île du Paradis avec une excursion d'une journée complète incluant la plongée en apnée et les activités de plage.",
+    "aboDabbab": "Abo Dabbab Marsa Alam",
+    "aboDabbabDesc": "Découvrez le monde sous-marin à Abo Dabbab, l'un des meilleurs spots de plongée de Marsa Alam.",
+    "desertSafari": "Safari dans le Désert de 5 Heures",
+    "desertSafariDesc": "Profitez d'une aventure passionnante dans le désert avec quad, balade à dos de chameau et dîner bédouin traditionnel.",
+    "cityTour": "Visite de la Ville de 6 Heures à Hurghada",
+    "cityTourDesc": "Explorez le meilleur de la ville de Hurghada avec notre visite guidée complète de 6 heures.",
+    "cairoTrip": "Excursion d'une Journée Complète de Hurghada au Caire",
+    "cairoTripDesc": "Visitez les Pyramides et le Sphinx lors d'une excursion d'une journée complète de Hurghada au Caire.",
+    "luxorTrip": "Excursion d'une Journée Complète de Hurghada à Louxor",
+    "luxorTripDesc": "Découvrez les merveilles antiques de Louxor, notamment la Vallée des Rois et le Temple de Karnak.",
+    "orangeBay": "Excursion d'une Journée Complète à l'Île Orange Bay",
+    "orangeBayDesc": "Passez une journée sur la magnifique île Orange Bay avec des eaux cristallines et des plages de sable blanc.",
+    "divingTrip": "Excursion de Plongée Quotidienne à Hurghada",
+    "divingTripDesc": "Explorez les magnifiques récifs coralliens de la Mer Rouge avec nos excursions de plongée quotidiennes pour tous les niveaux.",
+    "sharmElNaga": "Sharm El Naga",
+    "sharmElNagaDesc": "Visitez la magnifique baie de Sharm El Naga, parfaite pour la plongée en apnée et la détente.",
+    "hurghadaTransfer": "Transfert Aéroport Vers Hurghada",
+    "hurghadaTransferDesc": "Service de transfert aéroport confortable et fiable de l'aéroport d'Hurghada vers votre hôtel ou destination.",
+    "transferPrice": "Contactez pour le Prix",
+    "bookNow": "Réserver"
+  },
+  "adventure": {
+    "title": "Vous Cherchez une Aventure?",
+    "subtitle": "Partons en voyage avec Star Travel!",
+    "description": "Nous faisons de notre mieux pour vous garantir la meilleure expérience.",
+    "hurghadaActivities": "Activités Autour de Hurghada - RÉSERVEZ VOTRE VOYAGE",
+    "egyptTrips": "VOYAGES EN ÉGYPTE - RÉSERVEZ VOTRE VOYAGE"
+  },
+  "footer": {
+    "aboutUs": "À propos de nous",
+    "address": "Hurghada, Mer Rouge, EG",
+    "assistance": "Assistance 24/7",
+    "fastLinks": "Liens Rapides",
+    "openingHours": "Heures d'Ouverture",
+    "contactWhatsApp": "Contactez-Nous sur WhatsApp",
+    "rights": "Tous droits réservés"
+  },
+  "whatsapp": {
+    "interestParadise": "Bonjour! Je suis intéressé par l'excursion d'une journée complète à l'Île du Paradis",
+    "interestAboDabbab": "Bonjour! Je suis intéressé par le tour Abo Dabbab Marsa Alam",
+    "interestSafari": "Bonjour! Je suis intéressé par le Safari dans le Désert de 5 Heures",
+    "interestCityTour": "Bonjour! Je suis intéressé par la Visite de la Ville de 6 Heures à Hurghada",
+    "interestCairo": "Bonjour! Je suis intéressé par l'excursion d'une journée complète de Hurghada au Caire",
+    "interestLuxor": "Bonjour! Je suis intéressé par l'excursion d'une journée complète de Hurghada à Louxor",
+    "interestOrangeBay": "Bonjour! Je suis intéressé par l'excursion d'une journée complète à l'Île Orange Bay",
+    "interestDiving": "Bonjour! Je suis intéressé par l'Excursion de Plongée Quotidienne à Hurghada",
+    "interestSharm": "Bonjour! Je suis intéressé par le tour Sharm El Naga",
+    "interestHurghadaTransfer": "Bonjour! Je suis intéressé par le Transfert Aéroport Vers Hurghada",
+    "interestTour": "Bonjour! Je suis intéressé par la réservation d'un tour",
+    "interestEgypt": "Bonjour! Je suis intéressé par les voyages en Égypte"
+  }
+}
+
+

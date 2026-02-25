@@ -1,0 +1,39 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <div>
+      <a class="navbar-brand fw-bold" href="#home">
+        Star Travel
+      </a>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">{{ 'header.home' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">{{ 'header.about' | translate }}</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#tours">{{ 'header.tours' | translate }}</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">{{ 'header.contact' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <app-language-switcher></app-language-switcher>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary text-white ms-2 px-3" [href]="whatsappUrl" target="_blank">
+            <i class="bi bi-whatsapp"></i> {{ 'header.whatsapp' | translate }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

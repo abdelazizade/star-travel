@@ -1,0 +1,85 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "tours": "Tours",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+  "home": {
+    "title": "Star Travel",
+    "subtitle": "Your Gateway to Amazing Adventures",
+    "exploreEgypt": "Explore Egypt",
+    "discoverRedSea": "Discover the Wonders of the Red Sea",
+    "adventureAwaits": "Adventure Awaits",
+    "bestTours": "Experience the Best Tours in Egypt",
+    "bookNow": "Book Your Tour Now",
+    "contactUs": "Contact Us",
+    "getStarted": "Get Started"
+  },
+  "about": {
+    "title": "Star Travel",
+    "description": "Star Travel is a local company providing solutions for convenient ground transportation around Egypt. Our fleet offers fast and expeditiously professional drivers and top-quality vehicles for each transfer service.",
+    "description2": "We do our best to make sure that you will get the best experience during your journey. Whether you're looking for airport transfers, city tours, or full-day adventures, we've got you covered.",
+    "bookTransfer": "Book Your Transfer Now"
+  },
+  "tours": {
+    "activitiesTitle": "Activities Around Hurghada Red Sea",
+    "popularTitle": "Popular Tour of the Month",
+    "fullDayTitle": "Full Day Trip To Popular Places in Hurghada",
+    "paradiseIsland": "Full Day Trip To Paradise Island",
+    "paradiseIslandDesc": "Experience the beauty of Paradise Island with a full day trip including snorkeling and beach activities.",
+    "aboDabbab": "Abo Dabbab Marsa Alam",
+    "aboDabbabDesc": "Discover the underwater world at Abo Dabbab, one of the best diving spots in Marsa Alam.",
+    "desertSafari": "5 Hours Desert Safari",
+    "desertSafariDesc": "Enjoy an exciting desert adventure with quad biking, camel riding, and traditional Bedouin dinner.",
+    "cityTour": "6 Hours City Tour In Hurghada",
+    "cityTourDesc": "Explore the best of Hurghada city with our comprehensive 6-hour guided tour.",
+    "cairoTrip": "Full Day Trip From Hurghada To Cairo",
+    "cairoTripDesc": "Visit the Pyramids and Sphinx on a full day trip from Hurghada to Cairo.",
+    "luxorTrip": "Full Day Trip From Hurghada To Luxor",
+    "luxorTripDesc": "Discover the ancient wonders of Luxor including Valley of the Kings and Karnak Temple.",
+    "orangeBay": "Full Day Trip To Orange Bay Island",
+    "orangeBayDesc": "Spend a day at the beautiful Orange Bay Island with crystal clear waters and white sandy beaches.",
+    "divingTrip": "Daily Diving Trip In Hurghada",
+    "divingTripDesc": "Explore the amazing Red Sea coral reefs with our daily diving trips for all skill levels.",
+    "sharmElNaga": "Sharm El Naga",
+    "sharmElNagaDesc": "Visit the stunning Sharm El Naga bay, perfect for snorkeling and relaxation.",
+    "hurghadaTransfer": "Airport Transfer To Hurghada",
+    "hurghadaTransferDesc": "Comfortable and reliable airport transfer service from Hurghada Airport to your hotel or destination.",
+    "transferPrice": "Contact for Price",
+    "bookNow": "Book Now"
+  },
+  "adventure": {
+    "title": "Looking For An Adventure?",
+    "subtitle": "Let's go on a trip with Star Travel!",
+    "description": "We do our best to make sure that you will get the best experience.",
+    "hurghadaActivities": "Activities Around Hurghada - BOOK YOUR TRIP",
+    "egyptTrips": "EGYPT Trips - BOOK YOUR TRIP"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "address": "Hurghada, Red Sea, EG",
+    "assistance": "24/7 Assistance",
+    "fastLinks": "Fast Links",
+    "openingHours": "Opening Hours",
+    "contactWhatsApp": "Contact Us on WhatsApp",
+    "rights": "All rights reserved"
+  },
+  "whatsapp": {
+    "interestParadise": "Hi! I'm interested in the Full Day Trip To Paradise Island",
+    "interestAboDabbab": "Hi! I'm interested in the Abo Dabbab Marsa Alam tour",
+    "interestSafari": "Hi! I'm interested in the 5 Hours Desert Safari",
+    "interestCityTour": "Hi! I'm interested in the 6 Hours City Tour In Hurghada",
+    "interestCairo": "Hi! I'm interested in the Full Day Trip From Hurghada To Cairo",
+    "interestLuxor": "Hi! I'm interested in the Full Day Trip From Hurghada To Luxor",
+    "interestOrangeBay": "Hi! I'm interested in the Full Day Trip To Orange Bay Island",
+    "interestDiving": "Hi! I'm interested in the Daily Diving Trip In Hurghada",
+    "interestSharm": "Hi! I'm interested in the Sharm El Naga tour",
+    "interestHurghadaTransfer": "Hi! I'm interested in the Airport Transfer To Hurghada",
+    "interestTour": "Hi! I'm interested in booking a tour",
+    "interestEgypt": "Hi! I'm interested in Egypt trips"
+  }
+}
+
+

@@ -1,0 +1,43 @@
+<!-- Footer -->
+<footer id="contact" class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <h5 class="fw-bold mb-3">{{ 'footer.aboutUs' | translate }}</h5>
+        <p><i class="bi bi-geo-alt"></i> {{ 'footer.address' | translate }}</p>
+        <p>
+          <i class="bi bi-telephone"></i> 
+          <a [href]="'tel:' + phoneNumber" class="text-white text-decoration-none">{{ phoneNumber }}</a>
+        </p>
+        <p>
+          <i class="bi bi-whatsapp"></i> 
+          <a [href]="whatsappUrl" target="_blank" class="text-white text-decoration-none">WhatsApp: {{ phoneNumber }}</a>
+        </p>
+        <p><i class="bi bi-clock"></i> {{ 'footer.assistance' | translate }}</p>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <h5 class="fw-bold mb-3">{{ 'footer.fastLinks' | translate }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-white text-decoration-none">{{ 'header.home' | translate }}</a></li>
+          <li><a href="#about" class="text-white text-decoration-none">{{ 'header.about' | translate }}</a></li>
+          <li><a href="#tours" class="text-white text-decoration-none">{{ 'header.tours' | translate }}</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">{{ 'header.contact' | translate }}</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <h5 class="fw-bold mb-3">{{ 'footer.openingHours' | translate }}</h5>
+        <p><i class="bi bi-clock"></i> {{ 'footer.assistance' | translate }}</p>
+        <p>
+          <a [href]="whatsappUrl" target="_blank" class="btn btn-success">
+            <i class="bi bi-whatsapp"></i> {{ 'footer.contactWhatsApp' | translate }}
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2026 Abdelaziz 01012606477. {{ 'footer.rights' | translate }}.</p>
+    </div>
+  </div>
+</footer>
+

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hamditour": {
+    "startravel": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hamditour",
+            "outputPath": "dist/startravel",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -29,6 +29,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
               }
             ],
             "styles": [
@@ -69,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hamditour:build:production"
+              "buildTarget": "startravel:build:production"
             },
             "development": {
-              "buildTarget": "hamditour:build:development"
+              "buildTarget": "startravel:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "388eef6f-dce1-4468-a196-c0a80396fb68"
   }
 }

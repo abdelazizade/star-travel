@@ -1,0 +1,59 @@
+.hero-section {
+  .carousel-item {
+    .carousel-image {
+      min-height: 800px;
+    }
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; // Prevent image from overflowing on scale
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+  }
+  
+  .card-img-top {
+    transition: transform 0.3s ease;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  &:hover .card-img-top {
+    transform: scale(1.02); // Subtle scale that matches card movement
+  }
+  
+  .card-body {
+    transition: all 0.3s ease;
+  }
+  
+  &:hover .card-body {
+    // Content stays in sync with card movement
+  }
+}
+
+section {
+  scroll-margin-top: 76px;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .hero-section {
+    .carousel-item {
+      .carousel-image {
+        min-height: 400px;
+      }
+    }
+  }
+  
+  .display-3 {
+    font-size: 2rem;
+  }
+  
+  .display-4 {
+    font-size: 1.75rem;
+  }
+}
+
