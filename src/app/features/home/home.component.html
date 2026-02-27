@@ -19,14 +19,14 @@
         [class.active]="i === 0">
         <div
           class="carousel-image"
-          [ngStyle]="{ 'background-image': getSlideBackground(i) }"
+          [ngStyle]="{ 'background-image': slide?.images?.[0] ? 'url(' + slide?.images?.[0] + ')' : 'url(assets/images/1.jpeg)' }"
           style="background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
           <div class="text-center text-white">
             <h1 class="display-3 fw-bold mb-4">
-              {{ getLocalizedText(slide.title) }}
+              {{ getLocalizedText(slide?.title) }}
             </h1>
             <p class="lead mb-4">
-              {{ getLocalizedText(slide.description) }}
+              {{ getLocalizedText(slide?.description) }}
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <button class="carousel-control-next " type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -49,17 +49,17 @@
     <div class="row align-items-center">
       <div class="col-lg-6" *ngIf="about">
         <h2 class="display-4 fw-bold mb-4">
-          {{ getLocalizedText(about.title) }}
+          {{ getLocalizedText(about?.title) }}
         </h2>
         <p class="lead mb-4">
-          {{ getLocalizedText(about.description) }}
+          {{ getLocalizedText(about?.description) }}
         </p>
         <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">
           <i class="bi bi-whatsapp"></i> {{ 'about.bookTransfer' | translate }}
         </a>
       </div>
-      <div class="col-lg-6 mt-lg-4">
-        <img [src]="about.image || 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800'" alt="Tour" class="img-fluid rounded shadow">
+      <div class="col-lg-6 mt-4">
+        <img [src]="about?.images?.[0] ? about?.images?.[0] : 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800'" alt="Tour" class="img-fluid rounded shadow">
       </div>
     </div>
   </div>
@@ -161,19 +161,19 @@
         *ngFor="let item of travel[0]?.children">
         <div class="card h-100 shadow-sm">
           <img
-            [src]="item.images && item.images.length ? item.images[0] : 'assets/images/airport.jpeg'"
+            [src]="item?.images && item?.images?.length ? item?.images?.[0] : 'assets/images/airport.jpeg'"
             class="card-img-top"
             alt=""
             style="height: 250px; object-fit: cover;">
           <div class="card-body">
             <h5 class="card-title">
-              {{ getLocalizedText(item.title) }}
+              {{ getLocalizedText(item?.title) }}
             </h5>
             <p class="card-text">
-              {{ getLocalizedText(item.description) }}
+              {{ getLocalizedText(item?.description) }}
             </p>
             <p class="h4 text-primary" *ngIf="item.cost">
-              €{{ item.cost }}
+              €{{ item?.cost }}
             </p>
             <a [href]="whatsappUrl" target="_blank" class="btn btn-primary">
               {{ 'tours.bookNow' | translate }}

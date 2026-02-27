@@ -4,6 +4,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TourService } from '../../core/services/tour.service';
 import { Subject, take, takeUntil, tap } from 'rxjs';
 
+
+
+interface About{
+  id:string,
+  description: string,
+  title: string,
+  images: any[]
+}
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -33,7 +42,7 @@ export class HomeComponent {
   homeData: any;
   slider: any[] = [];
   travel: any[] = [];
-  about: any;
+  about: any = null;
 
   ngOnInit(): void {
     this.loadHomeData();
@@ -77,4 +86,3 @@ export class HomeComponent {
     return `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), ${image}`;
   }
 }
-
