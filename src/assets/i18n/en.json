@@ -4,10 +4,11 @@
     "about": "About",
     "tours": "Tours",
     "contact": "Contact",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "booking": "Booking"
   },
   "home": {
-    "title": "Star Travel",
+    "title": "Hurghada VIP Travel",
     "subtitle": "Your Gateway to Amazing Adventures",
     "exploreEgypt": "Explore Egypt",
     "discoverRedSea": "Discover the Wonders of the Red Sea",
@@ -15,13 +16,23 @@
     "bestTours": "Experience the Best Tours in Egypt",
     "bookNow": "Book Your Tour Now",
     "contactUs": "Contact Us",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "booking": "Booking",
+    "toursEyebrow": "Premium tours, airport transfers, and city trips at",
+    "toursEyebrowAccent": "competitive prices.",
+    "tourBadge": "Tour",
+    "priceFrom": "from",
+    "bookingTransfer": "Booking Transfer",
+    "swipeHint": "Swipe to explore more destinations →",
+    "readMore": "Read more",
+    "priceVaries": "Prices vary based on your destination"
   },
   "about": {
-    "title": "Star Travel",
-    "description": "Star Travel is a local company providing solutions for convenient ground transportation around Egypt. Our fleet offers fast and expeditiously professional drivers and top-quality vehicles for each transfer service.",
+    "eyebrow": "About us",
+    "title": "Hurghada VIP Travel",
+    "description": "Hurghada VIP Travel is a local company providing solutions for convenient ground transportation around Egypt. Our fleet offers fast and expeditiously professional drivers and top-quality vehicles for each transfer service.",
     "description2": "We do our best to make sure that you will get the best experience during your journey. Whether you're looking for airport transfers, city tours, or full-day adventures, we've got you covered.",
-    "bookTransfer": "Book Your Transfer Now"
+    "bookTransfer": "Booking Transfer"
   },
   "tours": {
     "activitiesTitle": "Activities Around Hurghada Red Sea",
@@ -52,19 +63,58 @@
   },
   "adventure": {
     "title": "Looking For An Adventure?",
-    "subtitle": "Let's go on a trip with Star Travel!",
+    "subtitle": "Let's go on a trip with Hurghada VIP Travel!",
     "description": "We do our best to make sure that you will get the best experience.",
     "hurghadaActivities": "Activities Around Hurghada - BOOK YOUR TRIP",
     "egyptTrips": "EGYPT Trips - BOOK YOUR TRIP"
   },
+  "adventureCta": {
+    "heading": "Your Egyptian Adventure",
+    "headingAccent": "Awaits",
+    "subtitle": "Let us help you plan the perfect trip through Egypt's wonders.",
+    "startPlanning": "Start Planning Your Trip",
+    "speakToExpert": "Speak to an Expert"
+  },
+  "howItWorks": {
+    "eyebrow": "How It Works",
+    "heading": "Your Journey in",
+    "headingAccent": "Four Steps",
+    "step1Title": "Choose Your Destination",
+    "step1Desc": "Browse our tours and transfers to find the experience that fits your trip.",
+    "step2Title": "Connect and Book",
+    "step2Desc": "Message us on WhatsApp and we'll confirm your booking in minutes.",
+    "step3Title": "Meet Your Guide",
+    "step3Desc": "Your driver or guide will meet you at the agreed time and location.",
+    "step4Title": "Enjoy Egypt",
+    "step4Desc": "Sit back and enjoy a safe, comfortable journey to your destination."
+  },
   "footer": {
     "aboutUs": "About Us",
+    "tagline": "Your trusted partner for unforgettable journeys across Egypt.",
     "address": "Hurghada, Red Sea, EG",
     "assistance": "24/7 Assistance",
     "fastLinks": "Fast Links",
     "openingHours": "Opening Hours",
     "contactWhatsApp": "Contact Us on WhatsApp",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "servicesHeading": "Services",
+    "servicesAirportTransfers": "Airport Transfers",
+    "servicesPrivateTours": "Private Tours",
+    "servicesGroupTransportation": "Group Transportation",
+    "servicesCityTransfers": "City Transfers",
+    "destinationsHeading": "Destinations",
+    "destinationCairoGiza": "Cairo & Giza",
+    "destinationLuxorKarnak": "Luxor & Karnak",
+    "destinationHurghadaRedSea": "Hurghada & Red Sea",
+    "destinationSharmElSheikh": "Sharm El-Sheikh",
+    "newsletterHeading": "Stay Inspired",
+    "newsletterDesc": "Get exclusive travel guides, offers, and destination stories.",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterSend": "Send",
+    "newsletterThanks": "Thanks! We'll be in touch.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
   },
   "whatsapp": {
     "interestParadise": "Hi! I'm interested in the Full Day Trip To Paradise Island",

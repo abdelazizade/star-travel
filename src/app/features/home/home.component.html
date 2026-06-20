@@ -1,5 +1,10 @@
 <!-- Hero Carousel -->
-<section id="home" class="hero-section" style="margin-top: 56px;" *ngIf="slider?.length">
+<section
+  id="home"
+  class="hero-section"
+  style="margin-top: 56px"
+  *ngIf="slider?.length"
+>
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button
@@ -9,34 +14,65 @@
         [attr.data-bs-slide-to]="i"
         [class.active]="i === 0"
         [attr.aria-current]="i === 0 ? 'true' : null"
-        [attr.aria-label]="'Slide ' + (i + 1)">
-      </button>
+        [attr.aria-label]="'Slide ' + (i + 1)"
+      ></button>
     </div>
     <div class="carousel-inner">
       <div
         class="carousel-item"
         *ngFor="let slide of slider; let i = index"
-        [class.active]="i === 0">
+        [class.active]="i === 0"
+      >
         <div
           class="carousel-image"
-          [ngStyle]="{ 'background-image': slide?.images?.[0] ? 'url(' + slide?.images?.[0] + ')' : 'url(assets/images/1.jpeg)' }"
-          style="background-size: cover; background-position: center; height: 600px; display: flex; align-items: center; justify-content: center;">
-          <div class="text-center text-white">
+          [ngStyle]="{
+            'background-image':
+              'linear-gradient(rgba(15,23,42,.55), rgba(15,23,42,.55)), url(\'' +
+              (slide?.images?.[0] || getHeroFallback(i)) +
+              '\')',
+          }"
+          style="
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div class="text-center text-white hero-text">
             <h1 class="display-3 fw-bold mb-4">
               {{ getLocalizedText(slide?.title) }}
             </h1>
             <p class="lead mb-4">
               {{ getLocalizedText(slide?.description) }}
             </p>
+            <a
+              [href]="whatsappUrl"
+              target="_blank"
+              class="btn btn-primary btn-lg rounded-pill px-5"
+            >
+              {{ "home.booking" | translate }}
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next " type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -48,18 +84,44 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6" *ngIf="about">
+        <p class="eyebrow-label">{{ "about.eyebrow" | translate }}</p>
         <h2 class="display-4 fw-bold mb-4">
           {{ getLocalizedText(about?.title) }}
         </h2>
         <p class="lead mb-4">
           {{ getLocalizedText(about?.description) }}
         </p>
-        <a [href]="whatsappUrl" target="_blank" class="btn btn-primary btn-lg">
-          <i class="bi bi-whatsapp"></i> {{ 'about.bookTransfer' | translate }}
+        <a
+          [href]="whatsappUrl"
+          target="_blank"
+          class="btn btn-primary btn-lg rounded-pill px-4"
+        >
+          <i class="bi bi-whatsapp"></i> {{ "about.bookTransfer" | translate }}
         </a>
       </div>
-      <div class="col-lg-6 mt-4">
-        <img [src]="about?.images?.[0] ? about?.images?.[0] : 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800'" alt="Tour" class="img-fluid rounded shadow">
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="about-collage">
+          <img
+            [src]="getAboutImage(0)"
+            alt="Tour"
+            class="collage-img rounded shadow-sm"
+          />
+          <img
+            [src]="getAboutImage(1)"
+            alt="Tour"
+            class="collage-img rounded shadow-sm"
+          />
+          <img
+            [src]="getAboutImage(2)"
+            alt="Tour"
+            class="collage-img rounded shadow-sm"
+          />
+          <img
+            [src]="getAboutImage(3)"
+            alt="Tour"
+            class="collage-img rounded shadow-sm"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -149,57 +211,166 @@
   </div>
 </section> -->
 
-<!-- Full Day Trips Section -->
-<section class="py-5" *ngIf="travel?.length">
+<!-- Tours & Transfers Section -->
+<section id="tours-cards" class="py-5" *ngIf="travel?.length">
   <div class="container">
-    <h2 class="text-center display-4 fw-bold mb-5">
+    <!-- <p class="eyebrow-label" *ngIf="travel[0]?.title">
       {{ getLocalizedText(travel[0]?.title) }}
+    </p> -->
+    <h2 class="display-5 fw-bold mb-4">
+      {{ "home.toursEyebrow" | translate }}
+      <span class="text-accent">{{
+        "home.toursEyebrowAccent" | translate
+      }}</span>
     </h2>
-    <div class="row g-4">
+    <div class="tours-scroll-row">
       <div
-        class="col-md-4"
-        *ngFor="let item of travel[0]?.children">
-        <div class="card h-100 shadow-sm">
-          <img
-            [src]="item?.images && item?.images?.length ? item?.images?.[0] : 'assets/images/airport.jpeg'"
-            class="card-img-top"
-            alt=""
-            style="height: 250px; object-fit: cover;">
-          <div class="card-body">
-            <h5 class="card-title">
-              {{ getLocalizedText(item?.title) }}
-            </h5>
-            <p class="card-text">
-              {{ getLocalizedText(item?.description) }}
-            </p>
-            <p class="h4 text-primary" *ngIf="item.cost">
-              €{{ item?.cost }}
-            </p>
-            <a [href]="whatsappUrl" target="_blank" class="btn btn-primary">
-              {{ 'tours.bookNow' | translate }}
-            </a>
-          </div>
+        class="tour-card"
+        *ngFor="let item of travel[0]?.children"
+        (click)="openTourDialog(item)"
+        role="button"
+        tabindex="0"
+        (keydown.enter)="openTourDialog(item)"
+      >
+        <div class="tour-card-image-wrap">
+          <img [src]="getTourImage(item)" class="tour-card-img" alt="" />
+          <span class="tour-card-badge">{{
+            "home.tourBadge" | translate
+          }}</span>
         </div>
+        <div class="tour-card-body">
+          <h5 class="card-title">
+            {{ getLocalizedText(item?.title) }}
+          </h5>
+          <p class="card-text">
+            {{ truncate(getLocalizedText(item?.description), 100) }}
+            <span
+              class="tour-card-readmore"
+              *ngIf="isTruncated(getLocalizedText(item?.description), 100)"
+              >{{ "home.readMore" | translate }}</span
+            >
+          </p>
+          <p class="tour-card-price" *ngIf="item?.cost; else cardPriceVaries">
+            {{ "home.priceFrom" | translate }} €{{ item?.cost }}
+          </p>
+          <ng-template #cardPriceVaries>
+            <p class="tour-card-price-varies">
+              {{ "home.priceVaries" | translate }}
+            </p>
+          </ng-template>
+          <a
+            [href]="whatsappUrl"
+            target="_blank"
+            class="btn btn-primary rounded-pill w-100"
+            (click)="$event.stopPropagation()"
+          >
+            {{ "home.bookingTransfer" | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="swipe-hint d-md-none text-center small text-muted mt-2">
+      {{ "home.swipeHint" | translate }}
+    </p>
+  </div>
+</section>
+
+<!-- Tour Detail Dialog -->
+<div
+  class="tour-dialog-backdrop"
+  *ngIf="selectedTour"
+  (click)="closeTourDialog()"
+>
+  <div
+    class="tour-dialog"
+    (click)="$event.stopPropagation()"
+    role="dialog"
+    aria-modal="true"
+  >
+    <button
+      type="button"
+      class="tour-dialog-close"
+      (click)="closeTourDialog()"
+      aria-label="Close"
+    >
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="tour-dialog-image-wrap">
+      <img [src]="getTourImage(selectedTour)" class="tour-dialog-img" alt="" />
+      <span class="tour-card-badge">{{ "home.tourBadge" | translate }}</span>
+    </div>
+    <div class="tour-dialog-body">
+      <h4 class="tour-dialog-title">
+        {{ getLocalizedText(selectedTour?.title) }}
+      </h4>
+      <p class="tour-dialog-price" *ngIf="selectedTour?.cost">
+        {{ "home.priceFrom" | translate }} €{{ selectedTour?.cost }}
+      </p>
+      <p class="tour-dialog-desc">
+        {{ getLocalizedText(selectedTour?.description) }}
+      </p>
+      <a
+        [href]="whatsappUrl"
+        target="_blank"
+        class="btn btn-primary rounded-pill w-100"
+      >
+        <i class="bi bi-whatsapp"></i> {{ "home.bookingTransfer" | translate }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- How It Works / Four Steps Section -->
+<section class="py-5 how-it-works-section">
+  <div class="container">
+    <p class="eyebrow-label text-center">
+      {{ "howItWorks.eyebrow" | translate }}
+    </p>
+    <h2 class="text-center display-5 fw-bold mb-5">
+      {{ "howItWorks.heading" | translate }}
+      <span class="text-accent">{{
+        "howItWorks.headingAccent" | translate
+      }}</span>
+    </h2>
+    <div class="steps-row">
+      <div class="step-item" *ngFor="let step of journeySteps">
+        <span class="step-number">{{ step.number }}</span>
+        <h5 class="step-title">{{ step.titleKey | translate }}</h5>
+        <p class="step-desc">{{ step.descKey | translate }}</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Adventure CTA Section -->
-<section class="py-5 bg-primary text-white">
+<section class="py-5 adventure-cta-section text-white">
   <div class="container text-center">
-    <h2 class="display-4 fw-bold mb-4">{{ 'adventure.title' | translate }}</h2>
-    <p class="lead mb-4">{{ 'adventure.subtitle' | translate }}</p>
-    <p class="mb-4">{{ 'adventure.description' | translate }}</p>
+    <h2 class="display-4 fw-bold mb-4">
+      {{ "adventureCta.heading" | translate }}
+      <span class="text-accent">{{
+        "adventureCta.headingAccent" | translate
+      }}</span>
+    </h2>
+    <p class="lead mb-4">{{ "adventureCta.subtitle" | translate }}</p>
     <div class="row g-3 justify-content-center">
-      <div class="col-md-6">
-        <a [href]="getWhatsAppUrl('whatsapp.interestTour')" target="_blank" class="btn btn-light btn-lg w-100">
-          <i class="bi bi-whatsapp"></i> {{ 'adventure.hurghadaActivities' | translate }}
+      <div class="col-md-5">
+        <a
+          [href]="getWhatsAppUrl('whatsapp.interestTour')"
+          target="_blank"
+          class="btn btn-primary btn-lg rounded-pill w-100"
+        >
+          {{ "adventureCta.startPlanning" | translate }}
+          <i class="bi bi-arrow-right"></i>
         </a>
       </div>
-      <div class="col-md-6">
-        <a [href]="getWhatsAppUrl('whatsapp.interestEgypt')" target="_blank" class="btn btn-light btn-lg w-100">
-          <i class="bi bi-whatsapp"></i> {{ 'adventure.egyptTrips' | translate }}
+      <div class="col-md-5">
+        <a
+          [href]="getWhatsAppUrl('whatsapp.interestEgypt')"
+          target="_blank"
+          class="btn btn-outline-light btn-lg rounded-pill w-100"
+        >
+          <i class="bi bi-telephone"></i>
+          {{ "adventureCta.speakToExpert" | translate }}
         </a>
       </div>
     </div>

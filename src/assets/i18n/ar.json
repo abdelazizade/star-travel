@@ -4,10 +4,11 @@
     "about": "من نحن",
     "tours": "الجولات",
     "contact": "اتصل بنا",
-    "whatsapp": "واتساب"
+    "whatsapp": "واتساب",
+    "booking": "الحجز"
   },
   "home": {
-    "title": "ستار ترافيل",
+    "title": "هرغادا في آي بي ترافيل",
     "subtitle": "بوابتك إلى مغامرات رائعة",
     "exploreEgypt": "استكشف مصر",
     "discoverRedSea": "اكتشف عجائب البحر الأحمر",
@@ -15,13 +16,23 @@
     "bestTours": "اختبر أفضل الجولات في مصر",
     "bookNow": "احجز جولتك الآن",
     "contactUs": "اتصل بنا",
-    "getStarted": "ابدأ"
+    "getStarted": "ابدأ",
+    "booking": "الحجز",
+    "toursEyebrow": "جولات مميزة، نقل من المطار، ورحلات داخل المدينة بـ",
+    "toursEyebrowAccent": "أسعار تنافسية.",
+    "tourBadge": "جولة",
+    "priceFrom": "ابتداءً من",
+    "bookingTransfer": "حجز النقل",
+    "swipeHint": "اسحب لاستكشاف المزيد من الوجهات ←",
+    "readMore": "اقرأ المزيد",
+    "priceVaries": "تختلف الأسعار حسب وجهتك"
   },
   "about": {
-    "title": "ستار ترافيل",
-    "description": "ستار ترافيل هي شركة محلية تقدم حلولاً لوسائل النقل البري المريحة في جميع أنحاء مصر. تقدم أسطولنا سائقين محترفين سريعين ومتسارعين ومركبات عالية الجودة لكل خدمة نقل.",
+    "eyebrow": "من نحن",
+    "title": "هرغادا في آي بي ترافيل",
+    "description": "هرغادا في آي بي ترافيل هي شركة محلية تقدم حلولاً لوسائل النقل البري المريحة في جميع أنحاء مصر. تقدم أسطولنا سائقين محترفين سريعين ومتسارعين ومركبات عالية الجودة لكل خدمة نقل.",
     "description2": "نبذل قصارى جهدنا للتأكد من حصولك على أفضل تجربة خلال رحلتك. سواء كنت تبحث عن نقل المطار أو جولات المدينة أو مغامرات يوم كامل، نحن نغطي احتياجاتك.",
-    "bookTransfer": "احجز نقلتك الآن"
+    "bookTransfer": "حجز النقل"
   },
   "tours": {
     "activitiesTitle": "أنشطة حول الغردقة البحر الأحمر",
@@ -52,19 +63,58 @@
   },
   "adventure": {
     "title": "تبحث عن مغامرة؟",
-    "subtitle": "لنذهب في رحلة مع ستار ترافيل!",
+    "subtitle": "لنذهب في رحلة مع هرغادا في آي بي ترافيل!",
     "description": "نبذل قصارى جهدنا للتأكد من حصولك على أفضل تجربة.",
     "hurghadaActivities": "أنشطة حول الغردقة - احجز رحلتك",
     "egyptTrips": "رحلات مصر - احجز رحلتك"
   },
+  "adventureCta": {
+    "heading": "مغامرتك المصرية",
+    "headingAccent": "في انتظارك",
+    "subtitle": "دعنا نساعدك في تخطيط رحلتك المثالية بين عجائب مصر.",
+    "startPlanning": "ابدأ تخطيط رحلتك",
+    "speakToExpert": "تحدث مع خبير"
+  },
+  "howItWorks": {
+    "eyebrow": "كيف تعمل",
+    "heading": "رحلتك في",
+    "headingAccent": "أربع خطوات",
+    "step1Title": "اختر وجهتك",
+    "step1Desc": "تصفح جولاتنا ووسائل النقل لتجد التجربة المناسبة لرحلتك.",
+    "step2Title": "تواصل واحجز",
+    "step2Desc": "راسلنا على واتساب وسنؤكد حجزك في دقائق.",
+    "step3Title": "قابل مرشدك",
+    "step3Desc": "سيقابلك السائق أو المرشد في الوقت والمكان المتفق عليه.",
+    "step4Title": "استمتع بمصر",
+    "step4Desc": "استرخِ واستمتع برحلة آمنة ومريحة إلى وجهتك."
+  },
   "footer": {
     "aboutUs": "من نحن",
+    "tagline": "شريكك الموثوق لرحلات لا تُنسى في ربوع مصر.",
     "address": "الغردقة، البحر الأحمر، مصر",
     "assistance": "مساعدة على مدار الساعة",
     "fastLinks": "روابط سريعة",
     "openingHours": "ساعات العمل",
     "contactWhatsApp": "اتصل بنا على واتساب",
-    "rights": "جميع الحقوق محفوظة"
+    "rights": "جميع الحقوق محفوظة",
+    "servicesHeading": "الخدمات",
+    "servicesAirportTransfers": "نقل المطار",
+    "servicesPrivateTours": "جولات خاصة",
+    "servicesGroupTransportation": "نقل جماعي",
+    "servicesCityTransfers": "نقل داخل المدينة",
+    "destinationsHeading": "الوجهات",
+    "destinationCairoGiza": "القاهرة والجيزة",
+    "destinationLuxorKarnak": "الأقصر والكرنك",
+    "destinationHurghadaRedSea": "الغردقة والبحر الأحمر",
+    "destinationSharmElSheikh": "شرم الشيخ",
+    "newsletterHeading": "كن مُلهَمًا",
+    "newsletterDesc": "احصل على دلائل سفر حصرية وعروض وقصص عن الوجهات.",
+    "newsletterPlaceholder": "بريدك الإلكتروني",
+    "newsletterSend": "إرسال",
+    "newsletterThanks": "شكراً! سنتواصل معك قريباً.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة",
+    "cookiePolicy": "سياسة ملفات تعريف الارتباط"
   },
   "whatsapp": {
     "interestParadise": "مرحباً! أنا مهتم برحلة يوم كامل إلى جزيرة الجنة",

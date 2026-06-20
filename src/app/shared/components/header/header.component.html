@@ -1,12 +1,12 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <div class="container">
     <div>
-      <a class="navbar-brand fw-bold" href="#home">
-        Star Travel
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <img src="assets/images/logo.png" alt="Hurghada VIP Travel" class="navbar-logo">
       </a>
     </div>
-    
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,8 +28,8 @@
           <app-language-switcher></app-language-switcher>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-primary text-white ms-2 px-3" [href]="whatsappUrl" target="_blank">
-            <i class="bi bi-whatsapp"></i> {{ 'header.whatsapp' | translate }}
+          <a class="nav-link btn btn-primary text-white rounded-pill ms-2 px-4" [href]="whatsappUrl" target="_blank">
+            <i class="bi bi-whatsapp"></i> {{ 'header.booking' | translate }}
           </a>
         </li>
       </ul>

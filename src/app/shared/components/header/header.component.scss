@@ -1,13 +1,37 @@
 .navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
   .nav-item {
     display: flex;
     align-items: center;
   }
 
-  .logo{
-    width: 40px;
+  .nav-link {
+    color: var(--color-dark-navy);
+    font-weight: 500;
+
+    &:hover,
+    &.active {
+      color: var(--color-primary-navy-light);
+    }
+  }
+
+  .navbar-logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .btn-primary {
+    border-radius: var(--radius-pill);
+    background: var(--color-primary-navy-light);
+    border-color: var(--color-primary-navy-light);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    .navbar-logo {
+      height: 32px;
+    }
   }
 }
 

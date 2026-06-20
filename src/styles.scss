@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --color-primary-navy: #1e3a8a;
+  --color-primary-navy-light: #1e40af;
+  --color-dark-navy: #0f172a;
+  --color-accent: #f59e0b;
+  --color-accent-light: #fbbf24;
+  --radius-pill: 50px;
+}
