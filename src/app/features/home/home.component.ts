@@ -73,10 +73,10 @@ export class HomeComponent {
   }
 
   private readonly heroFallbackImages = [
-    'assets/images/Property 1=Default.png',
-    'assets/images/Property 1=Variant2.png',
-    'assets/images/Property 1=Variant3.png',
-    'assets/images/Property 1=Variant4.png',
+    'assets/images/hero-1.jpg',
+    'assets/images/hero-2.jpg',
+    'assets/images/hero-3.jpg',
+    'assets/images/hero-4.jpg',
   ];
 
   getHeroFallback(index: number): string {

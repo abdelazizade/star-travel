@@ -233,7 +233,7 @@
         (keydown.enter)="openTourDialog(item)"
       >
         <div class="tour-card-image-wrap">
-          <img [src]="getTourImage(item)" class="tour-card-img" alt="" />
+          <img [src]="getTourImage(item)" class="tour-card-img" [alt]="getLocalizedText(item?.title)" loading="lazy" />
           <span class="tour-card-badge">{{
             "home.tourBadge" | translate
           }}</span>
@@ -296,7 +296,7 @@
       <i class="bi bi-x-lg"></i>
     </button>
     <div class="tour-dialog-image-wrap">
-      <img [src]="getTourImage(selectedTour)" class="tour-dialog-img" alt="" />
+      <img [src]="getTourImage(selectedTour)" class="tour-dialog-img" [alt]="getLocalizedText(selectedTour?.title)" />
       <span class="tour-card-badge">{{ "home.tourBadge" | translate }}</span>
     </div>
     <div class="tour-dialog-body">

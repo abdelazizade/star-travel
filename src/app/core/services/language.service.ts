@@ -1,5 +1,6 @@
 import { Injectable, PLATFORM_ID, Inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -12,6 +13,9 @@ export class LanguageService {
 
   constructor(
     private translate: TranslateService,
+    private title: Title,
+    private meta: Meta,
+    @Inject(DOCUMENT) private document: Document,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     // Don't set language in constructor - wait for translations to load
@@ -32,19 +36,30 @@ export class LanguageService {
   }
 
   setLanguage(lang: string): void {
-    this.translate.use(lang);
     this.currentLangSubject.next(lang);
     this.setStoredLanguage(lang);
-    
-    // Set RTL for Arabic (only in browser)
-    if (isPlatformBrowser(this.platformId)) {
-      if (lang === 'ar') {
-        document.documentElement.setAttribute('dir', 'rtl');
-        document.documentElement.setAttribute('lang', 'ar');
-      } else {
-        document.documentElement.setAttribute('dir', 'ltr');
-        document.documentElement.setAttribute('lang', lang);
-      }
+
+    // Set lang/dir on <html> (works on the server too, so prerendered HTML is correct)
+    this.document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    this.document.documentElement.setAttribute('lang', lang);
+
+    // Update SEO title/description once the translations for this language are loaded
+    this.translate.use(lang).subscribe(() => this.updateSeoTags());
+  }
+
+  private updateSeoTags(): void {
+    const title = this.translate.instant('seo.title');
+    const description = this.translate.instant('seo.description');
+
+    if (title && title !== 'seo.title') {
+      this.title.setTitle(title);
+      this.meta.updateTag({ property: 'og:title', content: title });
+      this.meta.updateTag({ name: 'twitter:title', content: title });
+    }
+    if (description && description !== 'seo.description') {
+      this.meta.updateTag({ name: 'description', content: description });
+      this.meta.updateTag({ property: 'og:description', content: description });
+      this.meta.updateTag({ name: 'twitter:description', content: description });
     }
   }
 
